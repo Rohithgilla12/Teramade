@@ -24,6 +24,13 @@
   color: #61dafb;
 }
 
-#root > div.App > header > div > div.carousel.carousel-slider {
-  height: 350px;
+#root>div.App>header>div>div.carousel.carousel-slider {
+  height: 450px;
+}
+
+.carousel .slide img {
+  width: auto !important;
+  vertical-align: top;
+  border: 0;
+  height: 450px;
 }

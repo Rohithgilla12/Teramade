@@ -5,18 +5,17 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Details from "./Details";
 
 const Home = () => {
+  const keyArr = [...Array(10).keys()];
   return (
     <>
       <Carousel showArrows={true} showThumbs={false} showStatus={false}>
-        <div>
-          <img src={`${process.env.PUBLIC_URL}/img/2.jpg`} />
-        </div>
-        <div>
-          <img src={`${process.env.PUBLIC_URL}/img/3.jpg`} />
-        </div>
-        <div>
-          <img src={`${process.env.PUBLIC_URL}/img/1.jpg`} />
-        </div>
+        {keyArr.map(i => {
+          return (
+            <div>
+              <img src={`${process.env.PUBLIC_URL}/img/${i}.jpg`} />
+            </div>
+          );
+        })}
       </Carousel>
       <Details />
     </>

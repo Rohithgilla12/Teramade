@@ -35,17 +35,17 @@ export default function Navbar() {
           >
             <HomeIcon onClick={() => history.push("/")} />
           </IconButton>
-          <Typography variant="h6" className={classes.title}>
-            Terahertz Materials and Devices
+          <Typography variant="h5" className={classes.title}>
+            Teramade (Terahertz Materials and Devices group)
           </Typography>
           <Button onClick={() => history.push("/news")} color="inherit">
-            News
+            <Typography variant="h6">News</Typography>
           </Button>
           <Button onClick={() => history.push("/people")} color="inherit">
-            People
+            <Typography variant="h6">People</Typography>
           </Button>
           <Button onClick={() => history.push("/publications")} color="inherit">
-            Publications
+            <Typography variant="h6">Publications</Typography>
           </Button>
         </Toolbar>
       </AppBar>
