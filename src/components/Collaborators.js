@@ -17,7 +17,7 @@ const Collaborators = () => {
   ];
   return (
     <>
-      <Typography variant="h3">Collaborators</Typography>
+      <Typography variant="h4">Collaborators</Typography>
       <Grid container>
         {Collabs.map((element, index) => {
           return (
