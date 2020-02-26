@@ -4,6 +4,8 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Details from "./Details";
 import Collaborators from "./Collaborators";
+import Footer from "./Footer";
+
 
 const Home = () => {
   const keyArr = [...Array(10).keys()];
@@ -20,6 +22,7 @@ const Home = () => {
       </Carousel>
       <Details />
       <Collaborators />
+      <Footer />
     </>
   );
 };
