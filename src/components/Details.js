@@ -41,7 +41,7 @@ const Details = () => {
         <Grid item xs={3} spacing={2}>
           <Paper className={classes.paper}>
             <img
-              src={`${process.env.PUBLIC_URL}/img/1.jpg`}
+              src={`${process.env.PUBLIC_URL}/img/details/meta.png`}
               className={classes.img}
             />
             <Typography variant="h6" className={classes.title}>
@@ -52,7 +52,7 @@ const Details = () => {
         <Grid item xs={3} spacing={2}>
           <Paper className={classes.paper}>
             <img
-              src={`${process.env.PUBLIC_URL}/img/1.jpg`}
+              src={`${process.env.PUBLIC_URL}/img/details/2d.png`}
               className={classes.img}
             />
             <Typography variant="h6" className={classes.title}>
@@ -63,7 +63,7 @@ const Details = () => {
         <Grid item xs={3} spacing={2}>
           <Paper className={classes.paper}>
             <img
-              src={`${process.env.PUBLIC_URL}/img/1.jpg`}
+              src={`${process.env.PUBLIC_URL}/img/details/sensors.png`}
               className={classes.img}
             />
             <Typography variant="h6" className={classes.title}>
@@ -74,7 +74,7 @@ const Details = () => {
         <Grid item xs={3} spacing={2}>
           <Paper className={classes.paper}>
             <img
-              src={`${process.env.PUBLIC_URL}/img/1.jpg`}
+              src={`${process.env.PUBLIC_URL}/img/details/micro.png`}
               className={classes.img}
             />
             <Typography variant="h6" className={classes.title}>

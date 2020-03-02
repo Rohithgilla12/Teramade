@@ -6,6 +6,7 @@ import News from "./components/News";
 import Publications from "./components/Publications";
 import Home from "./components/Home";
 import People from "./components/People";
+import Collaborators from "./components/Collaborators";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
             </Route>
             <Route path="/people">
               <People />
+            </Route>
+            <Route path="/collaborators">
+              <Collaborators />
             </Route>
             <Route path="/">
               <Home />
