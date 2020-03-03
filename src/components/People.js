@@ -31,6 +31,32 @@ const useStyles = makeStyles({
   }
 });
 
+const EachTile = props => {
+  return (
+    <div style={{ display: "flex" }}>
+      {props.imgName !== undefined ? (
+        <img
+          src={`${process.env.PUBLIC_URL}/img/people/${props.imgName}.png`}
+          alt="people"
+          style={{
+            width: "150px",
+            height: "150px",
+            margin: 10
+          }}
+        />
+      ) : null}
+      <div style={{ display: "flex", flexDirection: "column", padding: 10 }}>
+        <Typography gutterBottom variant="h5" component="h2">
+          {props.name}
+        </Typography>
+        <Typography variant="body2" color="textSecondary" component="p">
+          {props.role}
+        </Typography>
+      </div>
+    </div>
+  );
+};
+
 const People = () => {
   const Alumini = [
     "Ch. Amith, B Tech Final year Thesis, “Coupling Slot Antenna with Metamaterials”, (2019), currently with Technical University of Delft, The Netherlands",
@@ -44,109 +70,44 @@ const People = () => {
   return (
     <>
       <Grid container spacing={3} className={classes.root}>
-        <Grid item xs={3} spacing={3}>
-          <Card>
-            <CardMedia
-              className={classes.media}
-              image={`${process.env.PUBLIC_URL}/img/people/dibakar.png`}
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                Dr. Dibakar Roy Chowdhury
-              </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                Professor, Mahindra Ecole Centrale.
-              </Typography>
-            </CardContent>
-          </Card>
+        <Grid item xs={6}>
+          <EachTile
+            name={"Dr. Dibakar Roy Chowdhury"}
+            role={"Professor, Mahindra Ecole Centrale."}
+            imgName={"dibakar"}
+          />
+          <EachTile
+            name={"Mr. Sabyasachi Banerjee"}
+            role={"Research Fellow"}
+            imgName={"sachi"}
+          />
+          <EachTile
+            name={"Mr. Deepak Kumar"}
+            role={"Research Fellow"}
+            imgName={"deepak"}
+          />
         </Grid>
-        <Grid item xs={3} spacing={3}>
-          <Card>
-            <CardMedia
-              className={classes.media}
-              image={`${process.env.PUBLIC_URL}/img/people/sachi.png`}
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                Mr. Sabyasachi Banerjee
-              </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                Research Fellow
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid item xs={3} spacing={3}>
-          <Card>
-            <CardMedia
-              className={classes.media}
-              image={`${process.env.PUBLIC_URL}/img/people/deepak.png`}
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                Mr. Deepak Kumar
-              </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                Research Fellow
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid item xs={3} spacing={3}>
-          <Card>
-            <CardMedia
-              className={classes.media}
-              image={`${process.env.PUBLIC_URL}/img/people/subhojit.png`}
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                Mr. Subhajit Karmakar
-              </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                Research Fellow
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid item xs={3} spacing={3}>
-          <Card>
-            <CardMedia
-              className={classes.media}
-              image={`${process.env.PUBLIC_URL}/img/people/girish.png`}
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                Mr. Girish Kamble
-              </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                Research Fellow
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid item xs={3} spacing={3}>
-          <Card>
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                Ms. Shreeya Rane
-              </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                MS Thesis
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid item xs={3} spacing={3}>
-          <Card>
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                Mr. Surya Pranav Ambatipudi
-              </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                B Tech Thesis
-              </Typography>
-            </CardContent>
-          </Card>
+        <Grid item xs={6}>
+          <EachTile
+            name={"Mr. Subhajit Karmakar"}
+            role={"Research Fellow"}
+            imgName={"subhojit"}
+          />
+          <EachTile
+            name={"Mr. Girish Kamble"}
+            role={"Research Fellow"}
+            imgName={"girish"}
+          />
+          <EachTile
+            name={"Ms. Shreeya Rane"}
+            role={"MS Thesis"}
+            // imgName={"girish"}
+          />
+          <EachTile
+            name={"Mr. Surya Pranav Ambatipudi"}
+            role={"B Tech Thesis"}
+            // imgName={"girish"}
+          />
         </Grid>
       </Grid>
       <Grid container>
