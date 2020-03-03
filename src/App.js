@@ -7,6 +7,7 @@ import Publications from "./components/Publications";
 import Home from "./components/Home";
 import People from "./components/People";
 import Collaborators from "./components/Collaborators";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
             </Route>
             <Route path="/collaborators">
               <Collaborators />
+            </Route>
+            <Route path="/contact">
+              <Footer />
             </Route>
             <Route path="/">
               <Home />
