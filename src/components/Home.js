@@ -22,14 +22,6 @@ const Home = () => {
         })}
       </Carousel>
       <Details />
-      <Grid container>
-        <Grid item xs={9}>
-          <Collaborators />
-        </Grid>
-        <Grid item xs={3}>
-          <News />
-        </Grid>
-      </Grid>
       <Footer />
     </>
   );
