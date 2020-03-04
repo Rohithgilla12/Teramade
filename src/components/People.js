@@ -86,6 +86,11 @@ const People = () => {
             role={"Research Fellow"}
             imgName={"deepak"}
           />
+          <EachTile
+            name={"Mr. Surya Pranav Ambatipudi"}
+            role={"B Tech Thesis"}
+            imgName={"surya"}
+          />
         </Grid>
         <Grid item xs={6}>
           <EachTile
@@ -101,11 +106,6 @@ const People = () => {
           <EachTile
             name={"Ms. Shreeya Rane"}
             role={"MS Thesis"}
-            // imgName={"girish"}
-          />
-          <EachTile
-            name={"Mr. Surya Pranav Ambatipudi"}
-            role={"B Tech Thesis"}
             // imgName={"girish"}
           />
         </Grid>
