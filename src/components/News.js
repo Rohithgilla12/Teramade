@@ -29,12 +29,12 @@ const newsArr = [
 
 const News = () => {
   return (
-    <div style={{ height: 350, overflowY: "hidden" }}>
+    <div style={{ height: 450, overflowY: "hidden" }}>
       <Grid container>
         <List>
           <ListSubheader>News</ListSubheader>
           {/*  eslint-disable-next-line */}
-          <marquee direction="down">
+          <marquee direction="down" scrollamount="4">
             {newsArr.map(element => {
               return <Content data={element} />;
             })}

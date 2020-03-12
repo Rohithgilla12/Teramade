@@ -32,7 +32,7 @@ const Details = () => {
     <div className={classes.root}>
       <Grid container spacing={3}>
         <Grid item xs={9} className={classes.flexContainer}>
-          <Grid item xs={4} spacing={2}>
+          <Grid item xs={4} spacing={3}>
             <Paper className={classes.paper}>
               <img
                 src={`${process.env.PUBLIC_URL}/img/1.jpg`}

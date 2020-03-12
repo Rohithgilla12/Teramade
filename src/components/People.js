@@ -125,7 +125,7 @@ const People = () => {
       <Grid container>
         <Card variant="outlined" className={classes.wrapper}>
           <CardContent>
-            <Typography variant="h4">Alumini</Typography>
+            <Typography variant="h4">Alumni</Typography>
             <Divider />
             <Grid container>
               {Alumini.map((element, index) => {
