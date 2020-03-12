@@ -51,6 +51,11 @@ const EachTile = props => {
         <Typography variant="body2" color="textSecondary" component="p">
           {props.role}
         </Typography>
+        {props.area !== undefined ? (
+          <Typography variant="body2" color="textSecondary" component="p">
+            {props.area}
+          </Typography>
+        ) : null}
       </div>
     </div>
   );
@@ -79,16 +84,21 @@ const People = () => {
             name={"Mr. Sabyasachi Banerjee"}
             role={"Research Fellow"}
             imgName={"sachi"}
+            area={"Broad research topic: Resonant meta structures for sensing"}
           />
           <EachTile
             name={"Mr. Deepak Kumar"}
             role={"Research Fellow"}
             imgName={"deepak"}
+            area={
+              "Broad research topic: Terahertz devices employing metamaterials"
+            }
           />
           <EachTile
             name={"Mr. Surya Pranav Ambatipudi"}
             role={"B Tech Thesis"}
             imgName={"surya"}
+            area={"Broad research topic: Graphene metamaterials"}
           />
         </Grid>
         <Grid item xs={6}>
@@ -96,16 +106,19 @@ const People = () => {
             name={"Mr. Subhajit Karmakar"}
             role={"Research Fellow"}
             imgName={"subhojit"}
+            area={"Broad research topic: Fano resonant metamaterials"}
           />
           <EachTile
             name={"Mr. Girish Kamble"}
             role={"Research Fellow"}
             imgName={"girish"}
+            area={"Broad research topic: 2D materials for Terahertz"}
           />
           <EachTile
             name={"Ms. Shreeya Rane"}
             role={"MS Thesis"}
             // imgName={"girish"}
+            area={"Broad research topic: Terahertz gratings"}
           />
         </Grid>
       </Grid>

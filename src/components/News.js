@@ -33,6 +33,7 @@ const News = () => {
       <Grid container>
         <List>
           <ListSubheader>News</ListSubheader>
+          {/*  eslint-disable-next-line */}
           <marquee direction="down">
             {newsArr.map(element => {
               return <Content data={element} />;

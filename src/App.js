@@ -8,6 +8,7 @@ import Home from "./components/Home";
 import People from "./components/People";
 import Collaborators from "./components/Collaborators";
 import Footer from "./components/Footer";
+import Jobs from "./components/Jobs";
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
             </Route>
             <Route path="/contact">
               <Footer />
+            </Route>
+            <Route path="/jobs">
+              <Jobs />
             </Route>
             <Route path="/">
               <Home />
