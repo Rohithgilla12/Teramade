@@ -15,13 +15,13 @@
 
 .App-header {
   /* background-color: #282c34; */
-  background: #ECE9E6;
+  /* background: #ece9e6; */
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
+  /* background: -webkit-linear-gradient(to right, #ffffff, #ece9e6); */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+  /* background: linear-gradient(to right, #ffffff, #ece9e6); */
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -31,7 +31,7 @@
   color: #61dafb;
 }
 
-#root>div.App>header>div>div.carousel.carousel-slider {
+#root > div.App > header > div > div.carousel.carousel-slider {
   height: 450px;
 }
 
