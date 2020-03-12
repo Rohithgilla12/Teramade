@@ -48,14 +48,43 @@ const EachTile = props => {
         <Typography gutterBottom variant="h5" component="h2">
           {props.name}
         </Typography>
-        <Typography variant="body2" color="textSecondary" component="p">
+        <Typography
+          variant="body2"
+          color="textSecondary"
+          component="p"
+          style={{ alignSelf: "flex-start", marginLeft: 10 }}
+        >
           {props.role}
         </Typography>
         {props.area !== undefined ? (
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography
+            variant="body2"
+            color="textSecondary"
+            component="p"
+            style={{ alignSelf: "flex-start", marginLeft: 10 }}
+          >
             {props.area}
           </Typography>
         ) : null}
+        {props.respo !== undefined
+          ? props.respo.split("\n").map(function(item, key) {
+              return (
+                <span
+                  key={key}
+                  style={{ alignSelf: "flex-start", marginLeft: 10 }}
+                >
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    {item}
+                  </Typography>
+                  <br />
+                </span>
+              );
+            })
+          : null}
       </div>
     </div>
   );
@@ -78,6 +107,7 @@ const People = () => {
           <EachTile
             name={"Dr. Dibakar Roy Chowdhury"}
             role={"Professor, Mahindra Ecole Centrale."}
+            respo={`Head of Physics, \n Terahertz group leader,\n Fellow IETE, \n  Fellow OSI`}
             imgName={"dibakar"}
           />
           <EachTile
