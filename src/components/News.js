@@ -19,6 +19,7 @@ const Content = props => {
 };
 
 const newsArr = [
+  "Dr. S Jagan Mohan Rao successfully defended his doctoral thesis",
   "Review article on Terahertz Metamaterials is published by Journal of Electromagnetic Materials and Waves in January 2020 [January 2020]",
   "Prof. Michael feiginov from TU Vienna visited for one week [December 2019]",
   "Mr. Sabyasachi Banerjee received best poster award in BITS Pilani Hyderabad PhD presentation symposium [November 2019]",
@@ -28,16 +29,18 @@ const newsArr = [
 
 const News = () => {
   return (
-    <>
+    <div style={{ height: 350, overflowY: "hidden" }}>
       <Grid container>
         <List>
           <ListSubheader>News</ListSubheader>
-          {newsArr.map(element => {
-            return <Content data={element} />;
-          })}
+          <marquee direction="down">
+            {newsArr.map(element => {
+              return <Content data={element} />;
+            })}
+          </marquee>
         </List>
       </Grid>
-    </>
+    </div>
   );
 };
 
