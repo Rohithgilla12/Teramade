@@ -71,7 +71,11 @@ const EachTile = props => {
               return (
                 <span
                   key={key}
-                  style={{ alignSelf: "flex-start", marginLeft: 10 }}
+                  style={{
+                    alignSelf: "flex-start",
+                    marginLeft: 10,
+                    marginBottom: -20
+                  }}
                 >
                   <Typography variant="h6" color="textSecondary" component="p">
                     {item}
@@ -88,6 +92,7 @@ const EachTile = props => {
 
 const People = () => {
   const Alumini = [
+    "Dr. S Jagan Mohan Rao, PhD, “Exploring the Near Fiel Coupling and Ultrafast Switching in Terahertz Metamaterials” (2020)",
     "Ch. Amith, B Tech Final year Thesis, “Coupling Slot Antenna with Metamaterials”, (2019), currently with Technical University of Delft, The Netherlands",
     "Nakka Lok Abhishikht, B Tech Final year Thesis, Title “Controlling extra ordinary transmission through hole arrays using sub wavelength arrays”, (2018), currently with Tech Mahindra, Bangalore",
     "Eppa Akhilesh Reddy, B Tech Final year Thesis, Title “Terahertz Metamaterials based Thin Film sensors with ground plane” (2018)",
