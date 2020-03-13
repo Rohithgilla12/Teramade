@@ -12,7 +12,9 @@ const Content = props => {
   return (
     <ListItem>
       <Grid item xs={12}>
-        <p>{props.data}</p>
+        <Typography gutterBottom variant="body" component="h3">
+          {props.data}
+        </Typography>
         <Divider />
       </Grid>
     </ListItem>
@@ -29,20 +31,28 @@ const Jobs = () => {
     <>
       <Grid container>
         <List>
-          <ListSubheader>Jobs</ListSubheader>
+          <ListSubheader>
+            <Typography gutterBottom variant="body" component="h2">
+              Jobs
+            </Typography>
+          </ListSubheader>
           {JobsArr.map(element => {
             return <Content data={element} />;
           })}
         </List>
-        <Typography variant="body" color="textSecondary" component="p">
-          More details will be given to suitable candidates. General GOI norms
-          are applied for both the positions.
-        </Typography>
-        <Divider />
-        <Typography variant="body" color="textSecondary" component="p">
-          Bachelors thesis, Masters thesis and short term internships are
-          available for highly motivated candidates.
-        </Typography>
+        <Grid item={12} style={{ margin: 15 }}>
+          <Typography gutterBottom variant="body" component="h2">
+            Note
+          </Typography>
+          <Typography variant="body" color="textSecondary" component="h4">
+            More details will be given to suitable candidates. General GOI norms
+            are applied for both the positions.
+          </Typography>
+          <Typography variant="body" color="textSecondary" component="h4">
+            Bachelors thesis, Masters thesis and short term internships are
+            available for highly motivated candidates.
+          </Typography>
+        </Grid>
       </Grid>
     </>
   );

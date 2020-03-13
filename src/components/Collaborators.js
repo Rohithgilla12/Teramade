@@ -10,7 +10,7 @@ const Collaborators = () => {
   const classes = useStyles();
   const Collabs = [
     "Prof. Shriganesh Prabhu, Tata Institute of Fundamental research, Mumbai, India",
-    "Prof. Michael Feiginov, TU Vienaa, Austria",
+    "Prof. Michael Feiginov, TU Vienna, Austria",
     "Dr. Gagan Kumar, IIT Guwahati, Guwahati, India",
     "Prof. Ravi K Varshney, IIT Delhi, Delhi, India",
     "Dr. Abul Azad, Loa Alamos National Laboratory, Los Alamos, USA",

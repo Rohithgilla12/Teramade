@@ -19,7 +19,9 @@ const Home = () => {
         })}
       </Carousel>
       <Details />
-      <Footer />
+      <div style={{ marginTop: 50 }}>
+        <Footer />
+      </div>
     </>
   );
 };

@@ -1,6 +1,6 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .App-logo {
   height: 40vmin;
@@ -24,7 +24,7 @@
   color: #61dafb;
 }
 
-#root > div.App > header > div > div.carousel.carousel-slider {
+#root>div.App>header>div>div.carousel.carousel-slider {
   height: 450px;
 }
 

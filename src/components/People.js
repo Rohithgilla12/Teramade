@@ -162,12 +162,11 @@ const People = () => {
                 return (
                   <Grid item xs={12} className={classes.collabInfo}>
                     <span>
-                      {index + 1}) {element}
+                      {index + 1} {element}
                     </span>
                   </Grid>
                 );
               })}
-              <Grid item xs={12} className={classes.collabInfo}></Grid>
             </Grid>
           </CardContent>
         </Card>
