@@ -45,11 +45,11 @@ const EachTile = props => {
         />
       ) : null}
       <div style={{ display: "flex", flexDirection: "column", padding: 10 }}>
-        <Typography gutterBottom variant="h5" component="h2">
+        <Typography gutterBottom variant="h4" component="h2">
           {props.name}
         </Typography>
         <Typography
-          variant="body2"
+          variant="h6"
           color="textSecondary"
           component="p"
           style={{ alignSelf: "flex-start", marginLeft: 10 }}
@@ -58,7 +58,7 @@ const EachTile = props => {
         </Typography>
         {props.area !== undefined ? (
           <Typography
-            variant="body2"
+            variant="h6"
             color="textSecondary"
             component="p"
             style={{ alignSelf: "flex-start", marginLeft: 10 }}
@@ -73,11 +73,7 @@ const EachTile = props => {
                   key={key}
                   style={{ alignSelf: "flex-start", marginLeft: 10 }}
                 >
-                  <Typography
-                    variant="body2"
-                    color="textSecondary"
-                    component="p"
-                  >
+                  <Typography variant="h6" color="textSecondary" component="p">
                     {item}
                   </Typography>
                   <br />
