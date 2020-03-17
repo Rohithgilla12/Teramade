@@ -61,6 +61,12 @@ export default function Navbar() {
             onClick={() => history.push("/sponsoredProjects")}
             color="inherit"
           >
+            <Typography variant="h6">Research Facilities</Typography>
+          </Button>
+          <Button
+            onClick={() => history.push("/researchFacilities")}
+            color="inherit"
+          >
             <Typography variant="h6">Sponsored Projects</Typography>
           </Button>
           <Button onClick={() => history.push("/contact")} color="inherit">

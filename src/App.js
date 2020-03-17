@@ -10,6 +10,7 @@ import Collaborators from "./components/Collaborators";
 import Footer from "./components/Footer";
 import Jobs from "./components/Jobs";
 import SponsoredProjects from "./components/SponsoredProjects";
+import ResearchFacilities from "./components/ResearchFacilities";
 
 function App() {
   return (
@@ -38,6 +39,9 @@ function App() {
             </Route>
             <Route path="/sponsoredProjects">
               <SponsoredProjects />
+            </Route>
+            <Route path="/researchFacilities">
+              <ResearchFacilities />
             </Route>
             <Route path="/">
               <Home />
