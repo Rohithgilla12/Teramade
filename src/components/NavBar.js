@@ -7,6 +7,7 @@ import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import HomeIcon from "@material-ui/icons/Home";
 import { useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -17,6 +18,9 @@ const useStyles = makeStyles(theme => ({
   },
   title: {
     flexGrow: 1
+  },
+  img: {
+    height: 50
   }
 }));
 
@@ -35,9 +39,16 @@ export default function Navbar() {
           >
             <HomeIcon onClick={() => history.push("/")} />
           </IconButton>
-          <Typography variant="h4" className={classes.title}>
+          <Typography variant="h5" className={classes.title}>
             TERAMADE (Terahertz Materials and Devices group)
           </Typography>
+          <a href="https://www.mahindraecolecentrale.edu.in/">
+            <img
+              src={`${process.env.PUBLIC_URL}/img/logo.png`}
+              alt="MEC"
+              className={classes.img}
+            />
+          </a>
         </Toolbar>
       </AppBar>
       <AppBar position="static" color="transparent">
