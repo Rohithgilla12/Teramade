@@ -19,7 +19,13 @@ const Content = (props) => {
 };
 
 const newsArr = [
-  "Our recent work is highlighted by JPD in twitter, https://twitter.com/JPhysD/status/1269736008008032258",
+  [
+    "Our recent work is highlighted by JPD in twitter,",
+    <a href="https://twitter.com/JPhysD/status/1269736008008032258">
+      Tweet Link
+    </a>,
+    "[June 2020]",
+  ],
   "Dr. S Jagan Mohan Rao successfully defended his doctoral thesis, March 2020",
   "Review article on Terahertz Metamaterials is published by Journal of Electromagnetic Materials and Waves in January 2020 [January 2020]",
   "Prof. Michael feiginov from TU Vienna visited for one week [December 2019]",
