@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import Jobs from "./components/Jobs";
 import SponsoredProjects from "./components/SponsoredProjects";
 import ResearchFacilities from "./components/ResearchFacilities";
+import Patent from "./components/Patents";
 
 function App() {
   return (
@@ -42,6 +43,9 @@ function App() {
             </Route>
             <Route path="/researchFacilities">
               <ResearchFacilities />
+            </Route>
+            <Route path="/patents">
+              <Patent />
             </Route>
             <Route path="/">
               <Home />
