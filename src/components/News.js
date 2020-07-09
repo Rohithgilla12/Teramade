@@ -19,6 +19,7 @@ const Content = (props) => {
 };
 
 const newsArr = [
+  "Prof. Dibakar Roy Chowdhury elected as Senior Member of Optical Society of America (OSA) [July 2020]",
   [
     "Our recent work is highlighted by JPD in twitter,",
     <a href="https://twitter.com/JPhysD/status/1269736008008032258">
