@@ -9090,10 +9090,10 @@ react-is@^16.12.0, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.0, react-i
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-responsive-carousel@^3.2.10:
-  version "3.2.10"
-  resolved "https://registry.yarnpkg.com/react-responsive-carousel/-/react-responsive-carousel-3.2.10.tgz#2de13bdc131d78b8b92d3653d295a77d8c20cf2e"
-  integrity sha512-O8MV2LoR07BttvWaXesyWkE6s8xRW6p6HiMkelZ3TuPYQwKnlw+fYtZN+bQ3/1jg0D5JQGATY4Hnw/4WEXHnag==
+react-responsive-carousel@^3.2.14:
+  version "3.2.14"
+  resolved "https://registry.yarnpkg.com/react-responsive-carousel/-/react-responsive-carousel-3.2.14.tgz#5f51083904e1f63682a4c80ca253cbfdd6ffb398"
+  integrity sha512-Wr9Ee1ZDaM898eOTTVkF4a2Ws4YCYzTCP07k3zSSYPglkO2qg6tFjqa4EU/Hs9lvMzR6jcKWl8jLkHLnqQCWnQ==
   dependencies:
     classnames "^2.2.5"
     prop-types "^15.5.8"
