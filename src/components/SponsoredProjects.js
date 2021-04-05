@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, List, ListItem, Divider, Typography } from "@material-ui/core";
 
-const Content = props => {
+const Content = (props) => {
   return (
     <ListItem>
       <Grid item xs={12}>
@@ -31,6 +31,14 @@ const SponsoredProjects = () => {
           External Research Grants (as PI)
         </Typography>
         <List>
+          <Content
+            projectTitle={
+              "Metamaterials based compact broadband terahertz modulator for Terahertz photonics(MeitY), India"
+            }
+            company={""}
+            agency={"Ministry of  Electronics and Information Technology"}
+            funded={"74.0 L "}
+          />
           <Content
             projectTitle={
               "Metamaterials induced perfect absorption in thin film absorber"

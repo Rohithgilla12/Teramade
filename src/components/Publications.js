@@ -23,7 +23,23 @@ const Publications = () => {
     <>
       <Grid container>
         <List>
+          <ListSubheader>2021</ListSubheader>
+          <Content
+            data={`55) Dynamically tunable slow light characteristics in graphene based Terahertz metasurfaces, Deepak Kumar, Monika Koijjam Devi, Ranjan Kumar, and Dibakar Roy Chowdhury, Optics Communications, 491, 126949 (2021)`}
+          />
+          <Content
+            data={`54) Magnetic wires: transverse magnetism in one-dimensional plasmonic system, Subhajit Karmakar, Deepak Kumar, Bishnu P Pal, Ravendra Varshney, and Dibakar Roy Chowdhury, Optics Letters, 46, 1365 (2021)`}
+          />
           <ListSubheader>2020</ListSubheader>
+          <Content
+            data={`53) Growth and Characterization of Single Crystals of L-Histidine Hydrochloride Monohydrate for Nonlinear Optical Applications, S Yadav, M Kumar, D Nayak, S Banerjee, N Khan, S Nimanpure, G Moona, R Sharma, B K. Sharma, D. Roy Chowdhury, N. Vijayan, and M Jewariya, Journal of Electronic Materials, accepted (2020)`}
+          />
+          <Content
+            data={`52) Thin Film Sensing with Terahertz Metamaterials, Dibakar Roy Chowdhury, Parama Pal, and Bishnu Pal, Asian Journal of Physics, 29, 891-906 (2020)`}
+          />
+          <Content
+            data={`51) Modulating Extraordinary Terahertz Transmissions in Multilayer Plasmonic Metasurfaces, Sabyasachi Banerjee, Nakka Lok Abhishikth, Subhajit Karmakar, Deepak Kumar, Shreeya Rane, Sanket Goel, Abul K Azad, Dibakar Roy Chowdhury, Journal of Optics, 22, 125101 (2020)`}
+          />
           <Content
             data={`50) Lattice Induced Plasmon Hybridization in Metamaterials, Subhajit Karmakar, Deepak Kumar, Ravendra Varshney, and Dibakar Roy Chowdhury, Optics Letters, 45, 3386 (2020)`}
           />
