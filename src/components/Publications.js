@@ -25,6 +25,15 @@ const Publications = () => {
         <List>
           <ListSubheader>2021</ListSubheader>
           <Content
+            data={`58) Investigation of dynamic optical study of flexible multiwall carbon nanotube paper using terahertz spectroscopy, Subhash Nimanpore, Animesh Pandey, Guruvandra Singh, Satish Teotia, Sabyasachi Banerjee, Sudhir Husale, Bhanu Pratap Singh, Dibakar Roy Chowdhury, Manoj Kumar, Rina Sharma, and Mukesh Jewariya, Journal of Electronic Materials, Accepted (2021)`}
+          />
+          <Content
+            data={`57) Investigation of Dynamic Optical Behavior of Potassium Acid Phthalate Single Crystal using Terahertz Time Domain Spectroscopy for Photonics Applications, Manju Kumari, N Vijayan, Debabrata Nayak, Mukesh Jewariya, Dibakar Roy Chowdhury, Anuj Krishna, and R. P. Pant, Journal of Electronic Materials, Accepted (2021)`}
+          />
+          <Content
+            data={`56) Topological Edge states in an all dielectric terahertz photonic crystals, Monika Koijam Devi, Sambhu Jana, and Dibakar Roy Chowdhury, Optical Materials Express, 11, 2445 (2021)`}
+          />
+          <Content
             data={`55) Dynamically tunable slow light characteristics in graphene based Terahertz metasurfaces, Deepak Kumar, Monika Koijjam Devi, Ranjan Kumar, and Dibakar Roy Chowdhury, Optics Communications, 491, 126949 (2021)`}
           />
           <Content
