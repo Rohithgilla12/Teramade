@@ -19,6 +19,7 @@ const Content = (props) => {
 };
 
 const patentsData = [
+  "A Topological Waveguide Device and its method for Dispersionless Slow  Light Transmission at Terahertz (THz) Frequencies, Dibakar Roy Chowdhury, and Koijam Monika Devi, Application number: 202141033040 (2021)",
   "Evanescent Order driven deep sub-wavelength particle detector employing all-dielectric terahertz metagrating (sub-wavelength grating), Dibakar Roy Chowdhury, Shreeya Rane, and Shriganesh Prabhu, Application number: 202141029457 (2021)",
   "Multilayered (Super-lattice) Metamaterials based Terahertz Spintronic Devices and its method of fabrication, Dibakar Roy Chowdhury, Subhajit Karmakar, Deepak Kumar, and Ravi Varshney, Indian Patent applied, Application Number: 202141026818 (2021)",
   "Hand Held Metasurface-based Microbe Detection Device (H2M2D2), Dibakar Roy Chowdhury and Sabyasachi Banerjee, Indian Patent Applied, Application Number: 202041026401 (2020)",

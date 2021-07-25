@@ -5,7 +5,7 @@ import {
   CardContent,
   Typography,
   Divider,
-  makeStyles
+  makeStyles,
 } from "@material-ui/core";
 
 const useStyles = makeStyles({
@@ -13,24 +13,25 @@ const useStyles = makeStyles({
     width: "auto !important",
     verticalAlign: "top",
     border: 0,
-    height: 300
+    height: 300,
   },
   root: {
-    marginTop: 15
+    marginTop: 15,
+    padding: 16,
   },
   collabInfo: {
     display: "flex",
     float: "left",
     padding: "16px",
-    fontSize: 18
+    fontSize: 18,
   },
   wrapper: {
     padding: "16px",
-    margin: "10px"
-  }
+    margin: "10px",
+  },
 });
 
-const EachTile = props => {
+const EachTile = (props) => {
   return (
     <div style={{ display: "flex" }}>
       {props.imgName !== undefined ? (
@@ -40,7 +41,7 @@ const EachTile = props => {
           style={{
             width: "150px",
             height: "150px",
-            margin: 10
+            margin: 10,
           }}
         />
       ) : null}
@@ -67,14 +68,14 @@ const EachTile = props => {
           </Typography>
         ) : null}
         {props.respo !== undefined
-          ? props.respo.split("\n").map(function(item, key) {
+          ? props.respo.split("\n").map(function (item, key) {
               return (
                 <span
                   key={key}
                   style={{
                     alignSelf: "flex-start",
                     marginLeft: 10,
-                    marginBottom: -20
+                    marginBottom: -20,
                   }}
                 >
                   <Typography variant="h6" color="textSecondary" component="p">
@@ -92,13 +93,16 @@ const EachTile = props => {
 
 const People = () => {
   const Alumini = [
+    "Ms. Shreeya Rane, MS Thesis, Anomalous refraction of THz waves (2020), currently with Mahindra University, India",
     "Dr. S Jagan Mohan Rao, PhD, “Exploring the Near Fiel Coupling and Ultrafast Switching in Terahertz Metamaterials” (2020)",
+    "Mr. Girish Kamble, (2020), currently with Shivaji University, Kolhapur, India",
+    "Mr. Surya Pranav Ambatipudi, B Tech Thesis, Graphene metamaterials, (2020), currently with UCLA, USA",
     "Ch. Amith, B Tech Final year Thesis, “Coupling Slot Antenna with Metamaterials”, (2019), currently with Technical University of Delft, The Netherlands",
     "Nakka Lok Abhishikht, B Tech Final year Thesis, Title “Controlling extra ordinary transmission through hole arrays using sub wavelength arrays”, (2018), currently with Tech Mahindra, Bangalore",
     "Eppa Akhilesh Reddy, B Tech Final year Thesis, Title “Terahertz Metamaterials based Thin Film sensors with ground plane” (2018)",
     "Shravan Kumar, B. Tech final year Thesis Title “Terahertz propagation through conducting and non conducting medium” (2016) , currently with Karsruhe Institute of Technology, pursuing Masters",
     "Sowmya Purankar, Thesis Title “Metamaterials based Microwave electromagnetic absorbers” Masters Thesis (2016), currently with Accenture",
-    "Vyshnavi Reddy, Thesis Title “Thin film sensing with Metamaterials” Masters Thesis (2016), currently with Accenture"
+    "Vyshnavi Reddy, Thesis Title “Thin film sensing with Metamaterials” Masters Thesis (2016), currently with Accenture",
   ];
   const classes = useStyles();
   return (
@@ -108,7 +112,7 @@ const People = () => {
           <EachTile
             name={"Dr. Dibakar Roy Chowdhury"}
             role={"Professor, Mahindra Ecole Centrale."}
-            respo={`Head of Physics, \n Terahertz group leader,\n Fellow IETE, \n  Fellow OSI`}
+            respo={`Professor & Head of Physics, \n Leader Nanotechnology Program,\n Fellow IETE, \n  Fellow OSI`}
             imgName={"dibakar"}
           />
           <EachTile
@@ -119,17 +123,29 @@ const People = () => {
           />
           <EachTile
             name={"Mr. Deepak Kumar"}
-            role={"Research Fellow"}
+            role={"Inspire Research Fellow"}
             imgName={"deepak"}
             area={
               "Broad research topic: Terahertz devices employing metamaterials"
             }
           />
           <EachTile
-            name={"Mr. Surya Pranav Ambatipudi"}
-            role={"B Tech Thesis"}
-            imgName={"surya"}
-            area={"Broad research topic: Graphene metamaterials"}
+            name={"Mr. Soumyajyoti Mallick"}
+            role={"Research Fellow"}
+            imgName={"mallick"}
+            area={"Broad research topic: Nonlinear Metamaterials."}
+          />
+          <EachTile
+            name={"Mr. Arun Jana"}
+            role={"Research Fellow"}
+            imgName={"arun"}
+            area={"Broad research topic : Terahertz magnetization"}
+          />
+          <EachTile
+            name={"Ms. Vaishnavi Sajeev"}
+            role={"Research Fellow"}
+            imgName={"vaishnavi"}
+            area={"Terahertz plasmonics"}
           />
         </Grid>
         <Grid item xs={6}>
@@ -140,16 +156,30 @@ const People = () => {
             area={"Broad research topic: Fano resonant metamaterials"}
           />
           <EachTile
-            name={"Mr. Girish Kamble"}
-            role={"Research Fellow"}
-            imgName={"girish"}
-            area={"Broad research topic: 2D materials for Terahertz"}
+            name={"Dr. Koijam Monika Devi (PhD IIT Guwahati)"}
+            role={"Postdoctoral Research Fellow"}
+            imgName={"monika"}
+            area={
+              "Broad Research topic: Metamaterials, Topological Photonics, Terahertz"
+            }
           />
           <EachTile
             name={"Ms. Shreeya Rane"}
-            role={"MS Thesis"}
-            // imgName={"girish"}
+            role={"Junior Research Fellow"}
+            imgName={"shreya"}
             area={"Broad research topic: Terahertz gratings"}
+          />
+          <EachTile
+            name={"Ms. Indu krishna K N "}
+            role={"Junior Research Fellow"}
+            imgName={"sowmya"}
+            area={"Broad research topic: Terahertz gratings"}
+          />
+          <EachTile
+            name={"Mr. Sambhu Jana"}
+            role={"Research Fellow"}
+            imgName={"sambhu"}
+            area={"Broad Research Topic : Topological Photonic Insulator"}
           />
         </Grid>
       </Grid>
