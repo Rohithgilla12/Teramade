@@ -6,11 +6,11 @@ import Details from "./Details";
 import Footer from "./Footer";
 
 const Home = () => {
-  const keyArr = [...Array(10).keys()];
+  const keyArr = [...Array(11).keys()];
   return (
     <>
       <Carousel showArrows={true} showThumbs={false} showStatus={false}>
-        {keyArr.map(i => {
+        {keyArr.map((i) => {
           return (
             <div>
               <img src={`${process.env.PUBLIC_URL}/img/${i}.jpg`} />
