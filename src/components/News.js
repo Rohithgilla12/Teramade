@@ -19,6 +19,8 @@ const Content = (props) => {
 };
 
 const newsArr = [
+  "Ms. Vaishnavi Sajeev received best presentation award for her talk entitled “Geometry dependent extra ordinary transmissions in terahertz hole arrays” in International Conference on Advanced Materials and Devices for Futuristic Applications-2021 (IC-AMDFA-2021) (November 2021)",
+  "Our recent work is highlighted as feature article/cover page by Journal of Applied Physics in their December 30th, 2021 issue, Hybridization of Dark resonating states in terahertz metasurfaces, Journal of Applied Physics, 130, 243101 (2021)",
   "Prof. Dibakar Roy Chowdhury elected as Senior Member of Optical Society of America (OSA) [July 2020]",
   [
     "Our recent work is highlighted by JPD in twitter,",
@@ -44,7 +46,7 @@ const News = () => {
           {/*  eslint-disable-next-line */}
           <marquee direction="down" scrollamount="2">
             {newsArr.map((element) => {
-              return <Content data={element} />;
+              return <Content key={element} data={element} />;
             })}
           </marquee>
         </List>

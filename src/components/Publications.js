@@ -23,7 +23,41 @@ const Publications = () => {
     <>
       <Grid container>
         <List>
+          <ListSubheader>2022</ListSubheader>
+          <Content
+            data={`69) Photo induced dynamic tailoring of near-field coupled terahertz metasurfaces and its effect on Coulomb parameters, Deepak Kumar, Manoj Gupta, Yogesh Shrivastava, Koijam Monika Devi, Ranjan Kumar, and Dibakar Roy Chowdhury, Accepted in Journal of Optics (2022)`}
+          />
+          <Content
+            data={`68) Magnetotransport modulation of Fano resonances in optically thin terahertz superlattice metasurfaces, Subhajit Karmakar, Ravendra Varshney, and Dibakar Roy Chowdhury, Journal of Physics D: Applied Physics, 55, 135109 (2022)`}
+          />
+          <Content
+            data={`67) Demonstration of toroidal metasurfaces through near-field coupling of bright mode resonators, Soumyajyoti Mallick, Nitin Chourasia, Rakesh Singh, and Dibakar Roy Chowdhury, Applied Physics Express, 15, 012005 (2022)`}
+          />
+          <Content
+            data={`66) Effect of asymmetry on topological photonic crystals comprising of dielectric rod structures, Sambhu Jana, K Monika Devi, and Dibakar Roy Chowdhury, Optics Communications, 505, 127589 (2022)`}
+          />
           <ListSubheader>2021</ListSubheader>
+          <Content
+            data={`65) Hybridization of Dark resonating states in terahertz metasurfaces, Sukhvinder Kaur, Subhajit Karmakar, Arun Jana, Ravendra K Varshney, and Dibakar Roy Chowdhury, Journal of Applied Physics, 130, 243101 (2021)`}
+          />
+          <Content
+            data={`64) Ultrasensitive Terahertz sensing with broadside coupled polarization insensitive graphene metamaterial cavities, Sukhvinder Kaur, Subhajit Karmakar, K. Monika Devi, Ravendra K. Varshney, and Dibakar Roy Chowdhury, Optik, 248, 168073 (2021)`}
+          />
+          <Content
+            data={`63) Investigation of dynamical optical study of Bi2Te3 topological insulators thin film based on MWCNT flexible paper using terahertz spectroscopy. Subhash Nimanpore, Animesh Pandey, G Singh, B P Singh, Dibakar Roy Chowdhury, Y U Jeong, Rina Sharma, Sudhir Husale, and Mukesh Jewariya, Optical materials, 121, 111490 (2021)`}
+          />
+          <Content
+            data={`62) Topological Edge states in an all dielectric terahertz photonic crystals, Monika Koijam Devi, Sambhu Jana, and Dibakar Roy Chowdhury, Optical Materials Express, 11, 2445 (2021)`}
+          />
+          <Content
+            data={`61) Elemental, Optical, and Time-Domain Terahertz Spectroscopy Studies on Methyl p-Hydroxybenzoate Single Crystal for THz Applications, Debabrata Nayak, N Vijayan, Manju Kumari, Pargam Vashishtha, Sudha Yadav, Mukesh Jewariya, Dibakar Roy Chowdhury, Govind Gupta, and R. P. Pant, Journal of Electronic Materials, 50, 6121 (2021)`}
+          />
+          <Content
+            data={`60) Dynamically tunable slow light characteristics in graphene-based Terahertz metasurfaces, Deepak Kumar, Monika Koijjam Devi, Ranjan Kumar, and Dibakar Roy Chowdhury, Optics Communications, 491, 126949 (2021)`}
+          />
+          <Content
+            data={`59) Magnetic wires: transverse magnetism in one-dimensional plasmonic system, Subhajit Karmakar, Deepak Kumar, Bishnu P Pal, Ravendra Varshney, and Dibakar Roy Chowdhury, Optics Letters, 46, 1365 (2021)`}
+          />
           <Content
             data={`58) Investigation of dynamic optical study of flexible multiwall carbon nanotube paper using terahertz spectroscopy, Subhash Nimanpore, Animesh Pandey, Guruvandra Singh, Satish Teotia, Sabyasachi Banerjee, Sudhir Husale, Bhanu Pratap Singh, Dibakar Roy Chowdhury, Manoj Kumar, Rina Sharma, and Mukesh Jewariya, Journal of Electronic Materials, Accepted (2021)`}
           />

@@ -6,7 +6,7 @@ import Details from "./Details";
 import Footer from "./Footer";
 
 const Home = () => {
-  const keyArr = [...Array(11).keys()];
+  const keyArr = [...Array(12).keys()];
   return (
     <>
       <Carousel showArrows={true} showThumbs={false} showStatus={false}>
