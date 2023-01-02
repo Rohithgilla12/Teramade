@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import {
   Grid,
   List,
@@ -6,6 +6,32 @@ import {
   ListSubheader,
   Divider,
 } from "@material-ui/core";
+
+function Marquee(props) {
+  const [paused, setPaused] = useState(false);
+  const marqueeRef = useRef(null);
+
+  function startMarquee() {
+    setPaused(false);
+    marqueeRef.current.start();
+  }
+
+  function pauseMarquee() {
+    setPaused(true);
+    marqueeRef.current.stop();
+  }
+
+  return (
+    <div
+      onMouseEnter={pauseMarquee}
+      onMouseLeave={startMarquee}
+      className={`marquee ${paused ? 'paused' : ''}`}
+    >
+      {/*  eslint-disable-next-line */}
+      <marquee ref={marqueeRef} {...props} />
+    </div>
+  );
+}
 
 const Content = (props) => {
   return (
@@ -23,8 +49,8 @@ const newsArr = [
   "Dr. Monika Koijam joined as scientist in European union funded project with University of Lillee and ICFO Bercelona (September 2022)",
   "Prof. Dibakar Roy Chowdhury started as Topical Editor of Optics Letters, Optica (erstwhile OSA) (September 2022)",
   "Dr. Subhajit Karmakar started working as post-doctoral associate with Princeton University, USA, (August 2022)",
-  "Our recent work is highlighted as feature article/cover page by Journal of Applied",
-  "Physics in June 2022. Magnetospectroscopy of terahertz surface plasmons in subwavelength perforated superlattice thin-films, Journal of Applied Physics, 131, 223102 (2022)",
+  "Our recent work is highlighted as feature article/cover page by Journal of Applied Physics in June 2022.",
+  "Magnetospectroscopy of terahertz surface plasmons in subwavelength perforated superlattice thin-films, Journal of Applied Physics, 131, 223102 (2022)",
   "Ms. Vaishnavi Sajeev received best presentation award for her talk entitled “Geometry dependent extra ordinary transmissions in terahertz hole arrays” in International Conference on Advanced Materials and Devices for Futuristic Applications-2021 (IC-AMDFA-2021) (November 2021)",
   "Our recent work is highlighted as feature article/cover page by Journal of Applied Physics in their December 30th, 2021 issue, Hybridization of Dark resonating states in terahertz metasurfaces, Journal of Applied Physics, 130, 243101 (2021)",
   "Prof. Dibakar Roy Chowdhury elected as Senior Member of Optical Society of America (OSA) [July 2020]",
@@ -49,12 +75,11 @@ const News = () => {
       <Grid container>
         <List>
           <ListSubheader>News</ListSubheader>
-          {/*  eslint-disable-next-line */}
-          <marquee direction="down" scrollamount="2">
+          <Marquee behavior="scroll" direction="down" scrollamount="2">
             {newsArr.map((element) => {
               return <Content key={element} data={element} />;
             })}
-          </marquee>
+          </Marquee>
         </List>
       </Grid>
     </div>
