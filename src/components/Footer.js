@@ -30,7 +30,7 @@ const Footer = () => {
             {/* <a href="mailto:dibakar.roychowdhury@mechyd.ac.in" target="_top">
             dibakar.roychowdhury@mechyd.ac.in
           </a> */}
-            dibakar.roychowdhury@mechyd.ac.in
+            dibakar.roychowdhury@mahindrauniversity.edu.in
           </Grid>
           <Grid item xs={12} className={classes.footerRow}>
             <Phone className={classes.footerIcon} /> 91-40-6713-5169 (Office)

@@ -22,8 +22,7 @@ const Content = props => {
 };
 
 const JobsArr = [
-  "BRNS sponsored JRF position is available on 'Development of Terahertz Metagrating for deep sub wavelength particle detection'",
-  "SERB sponsored JRF position is available on 'Non linear metamaterials for Terahertz source'"
+  "Terahertz Metamaterials, Metasurfaces and Topological Photonics"
 ];
 
 const Jobs = () => {
